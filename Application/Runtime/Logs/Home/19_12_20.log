@@ -1,0 +1,39 @@
+[ 2019-12-20T19:05:17+08:00 ] ::1 /newTeacher/Public/css/admin.css
+ERR: 无法加载控制器:Public
+
+[ 2019-12-20T19:31:44+08:00 ] ::1 /newTeacher/Home
+ERR: 无法加载控制器:Home
+
+[ 2019-12-20T19:33:24+08:00 ] ::1 /newTeacher/Home
+ERR: 模板不存在:./Application/Home/View//newTeacher/Index/index.html.html
+
+[ 2019-12-20T19:33:26+08:00 ] ::1 /newTeacher/Home
+ERR: 模板不存在:./Application/Home/View//newTeacher/Index/index.html.html
+
+[ 2019-12-20T19:37:03+08:00 ] ::1 /newTeacher/Home
+ERR: 模板不存在:./Application/Home/View/Index/进入入口文件.html
+
+[ 2019-12-20T20:00:21+08:00 ] ::1 /newTeacher/Home
+ERR: Think\Controller:U方法不存在！
+
+[ 2019-12-20T20:03:33+08:00 ] ::1 /newTeacher/Home
+ERR: 模板不存在:./Application/Home/View/Index/index.html
+
+[ 2019-12-20T20:03:34+08:00 ] ::1 /newTeacher/Home
+ERR: 模板不存在:./Application/Home/View/Index/index.html
+
+[ 2019-12-20T20:03:34+08:00 ] ::1 /newTeacher/Home
+ERR: 模板不存在:./Application/Home/View/Index/index.html
+
+[ 2019-12-20T20:03:34+08:00 ] ::1 /newTeacher/Home
+ERR: 模板不存在:./Application/Home/View/Index/index.html
+
+[ 2019-12-20T20:03:35+08:00 ] ::1 /newTeacher/Home
+ERR: 模板不存在:./Application/Home/View/Index/index.html
+
+[ 2019-12-20T20:03:35+08:00 ] ::1 /newTeacher/Home
+ERR: 模板不存在:./Application/Home/View/Index/index.html
+
+[ 2019-12-20T20:03:35+08:00 ] ::1 /newTeacher/Home
+ERR: 模板不存在:./Application/Home/View/Index/index.html
+

@@ -1,0 +1,12 @@
+[ 2019-12-22T12:06:28+08:00 ] ::1 /newTeacher/index.php/Home/Index/Index/index.html
+ERR: 模板不存在:./Application/Home/View/Index/index.html
+
+[ 2019-12-22T14:26:32+08:00 ] ::1 /newTeacher/Public/css/admin.css
+ERR: 无法加载控制器:Public
+
+[ 2019-12-22T14:46:06+08:00 ] ::1 /newTeacher/Public/css/admin.css
+ERR: 无法加载控制器:Public
+
+[ 2019-12-22T14:46:07+08:00 ] ::1 /newTeacher/Public/css/admin.css
+ERR: 无法加载控制器:Public
+

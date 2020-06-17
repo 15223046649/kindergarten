@@ -1,0 +1,151 @@
+body{
+				/* margin: 100px;
+				border: 1px solid #03A9F4;
+				height:800px; */
+				width:960px;
+				margin: 0 auto;
+		        position: relative;
+				/* position: absolute;绝对定位这里把body固定住了 */
+			}
+header{
+				width:960px;
+				height: 120px;
+				/* margin:0 auto; */
+				background-color: #DEEFFA;
+			    position:absolute;
+				top:0;
+				left:0;/* 这里的header定位标准是html,而不是body*/
+				/* position:relative;定位标准恢复到body */
+				/* position:fixed;固定住不动 */
+				/* position:relative;
+								top:10px;
+								left:10px; */
+			}
+h1{
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	text-align: center;
+	letter-spacing:2px;
+	color: black;
+}
+.logo{
+	color: black;
+	font-size: 30px;	
+}
+aside{
+				width: 200px;
+				height: 500px;
+				background:#DEEFFA;
+				position:absolute;
+				top:120px;
+				left:0px;
+			}
+h3{
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	text-align: center;
+	letter-spacing:2px;
+	color: black;
+}
+.aside-1{
+   line-height:35px; 
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+	font-size:16px;	
+	list-style-type:none;
+	letter-spacing:2px;
+	text-align: left;
+	color:black;
+}
+a{
+	text-decoration:none;
+	color:black;
+}
+a:hover{
+	color:#60281e;
+	font-size: 22px;
+}
+section{
+				width: 760px;
+				height: 500px;
+				/*background:#DEEFFA;*/
+				background: url(../image/12.jpg);
+				/* -moz-opacity:0.5;  
+				
+				-khtml-opacity: 0.5;  
+				
+				opacity: 0.5; */
+				position:absolute;
+				top:120px;
+				left:200px;
+			}
+.logo-1{
+	color: black;
+	font-size: 15px;
+}
+.section-1{
+	text-align: center;
+	width:560px;
+	height: 300px;
+	border: 2px solid black;;
+	border-radius:10px;
+	/* border-radius: 1px; */
+	margin:100px;
+	padding-top:20px;
+	background: rgba(225,225,225,0.3); 
+}
+.section-1 ul{
+	list-style-type:none;
+	line-height:35px;
+		font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+		/* font-size:16px;	 */
+		list-style-type:none;
+		letter-spacing:2px;
+		/* text-align: left; */
+		color:#000000;
+}
+.section-1 ul li{
+	font-size:16px;	
+}
+.button-1{
+	border:1px solid;
+	border-radius:10px;
+	size: 20px;
+}
+footer{
+				width: 960px;
+				height: 180px;
+				background:#DEEFFA;
+				position:absolute;
+				top:620px;
+				left:0px;
+				margin-top:6px;
+}
+.tanxing{
+	display: -moz-box;
+	display: -webkit-box; 			
+}
+p{
+			width:275px;
+			font-size:18px;
+			/* font-variant: small-caps; */
+			/* font-style: normal 恢复正常 italic 使用斜体 oblique 文字倾斜 *//*设置是否倾斜*/
+			/* font-weight:  normal 恢复正常 bold 粗体 bolder更粗  lighter 较细 100~900逐步加粗 *//*字体是否加粗*/
+			-moz-box-orient:horizontal;
+			-webkit-box-orient:horizontal;
+			
+			-webkit-box-pack:center;
+			-moz-box-pack: center;
+			
+			font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+			border: 2px solid black;
+			border-radius:8px;
+			background: #DEEFFA;
+			margin: 8px;
+			padding:10px;
+			color:black;
+}
+/* .setp1{
+	 font-size:16px;
+	 text-align:left;
+	 font-family:Courier New;
+	 padding:5px;
+	 
+ }	 */	
