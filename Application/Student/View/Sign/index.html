@@ -1,0 +1,12 @@
+    <div class="title">我要签到</div><br/>
+     <div class="title">签到提醒：请记得签到和签退哦！</div><br/>
+<form method ="post" class ="form-horizo​​ntal" action ="__CONTROLLER__/sign">
+<table border="0" align="left">
+ <tr><td>姓名</td><td><input type="text" name="name" value="{$Think.session.Student_NAME}"/></td></tr>
+ <tr><td>ID</td><td><input type="text" name="id" value="{$Think.session.Student_ID}"/></td></tr>
+ <tr><td>班级</td><td><input type="text" name="class" value="{$Think.session.Student_CLA}"/></td></tr>
+ <tr><td>当前时间</td><td><input name="addtime" type="text"  οnclick="selectTime()" value="{:date('Y-m-d H:i:s')}"></td></tr>
+ <tr><td><select name="state"><option value="1">我要签到</option><option value="1">  </option></select></td><td><a href="__CONTROLLER__/delete">我要签退</a></td></tr>
+ <tr><td></td><td><input type="submit" value="确认"></td></tr>
+ </table>
+ </form>

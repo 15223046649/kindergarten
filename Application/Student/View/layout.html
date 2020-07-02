@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>安和幼儿园管理系统-家长端</title>
+	<link href="__PUBLIC__/css/student.css" rel="stylesheet" />
+	<script src="__PUBLIC__/js/jquery.min.js"></script>
+</head>
+<body>
+<div id="top">
+	<h1 class="left">幼儿园管理系统  家长端</h1>
+	<ul class="right">
+		<li>欢迎您：{$Think.session.Student_NAME}</li>
+		<li>|</li><li><a href="http://{$Think.SERVER.HTTP_HOST}__ROOT__/index.php/Home/Index/Index/index.html">首页</a></li>
+		<li>|</li><li><a href="__MODULE__/Login/logout">退出登录</a></li>
+	</ul>
+</div>
+<div id="main">
+	<div id="menu" class="left">
+		<ul><li><a href="__MODULE__/Index/index" id="Index_index">首页</a></li>
+		    <li><a href="__MODULE__/Information/update" id="Goods_add">信息修改</a></li>
+			<li><a href="__MODULE__/Message/index" id="Goods_index">查看通知</a></li>
+			<li><a href="__MODULE__/Message/index" id="Goods_index" style="font-size:12px;">教师通知</a></li>
+			<li><a href="__MODULE__/Snotice/index" id="Goods_index" style="font-size:12px;">园长通知</a></li>
+			<li><a href="__MODULE__/Sview/index" id="Suggest_add">发表意见</a></li>
+			<li><a href="__MODULE__/Leave/index" id="Leave_index">申请请假</a></li>
+			<li><a href="__MODULE__/Sign/index" id="Sign_index">个人考勤</a></li>
+			
+			
+			
+		</ul>
+	</div>
+	<div id="content">
+		<div class="item">{__CONTENT__}</div>
+	</div>
+</div>
+<script>
+	$("#{$Think.CONTROLLER_NAME}_{$Think.ACTION_NAME}").addClass("curr");
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<div class="title">园长通知</div>
+<div class="title-btn left"></div>
+<div class="data-list clear">
+	<table border="0">
+		<tr><th width="50">id</th>
+		<th>主题</th>
+		<th width="150">内容</th>
+        <th width="100">时间</th>
+        </tr>
+		<foreach name="snotice.list" item="v">
+		<tr><td>{$v.id}</td>
+			<td>{$v.stitle}</td>
+			<td class="center">{$v.scomment}</td>
+			<td class="center">{$v.stime}</td>
+			</tr>
+		</foreach>
+	</table>
+	<div class="pagelist">{$snotice.page}</div>
+</div>

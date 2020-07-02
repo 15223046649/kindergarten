@@ -1,0 +1,26 @@
+<div class="title">请假-审核</div>
+
+<div class="data-list clear">
+	<table border="0">
+		<tr align="center"><th width="50">id</th>
+		<th width="100">开始时间</th>
+		<th width="170">原因</th>
+        <th width="100">结束时间</th>
+        <th width="60">状态</th>
+        </tr>
+		<foreach name="leave.list" item="v">
+		<tr><td>{$v.id}</td>
+			<td>{$v.timestart}</td>
+			<td class="center">{$v.reason}</td>
+			<td class="center">{$v.timeend}</td>
+			<!--<td class="center">{$v.state}</td>-->
+		 <td class="center">
+							 <if condition="$v.state eq 1">批假
+                             <elseif condition="$v.state eq 0"/>拒绝批假
+                             <elseif condition="$v.state eq -1"/>未审核
+                             </if></td>
+			</tr>
+		</foreach>
+	</table>
+	<div class="pagelist">{$leave.page}</div>
+</div>
