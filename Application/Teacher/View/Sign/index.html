@@ -1,0 +1,15 @@
+<div class="title">考勤管理</div>
+<div class="data-list clear">
+	<table border="1">
+		<tr><th width="150">学号</th><th width="60">姓名</th><th width="100">状态</th><th width="100">签到时间</th></tr>
+		<foreach name="sign.list" item="v">
+		<tr><td>{$v.id}</td>
+			<td>{$v.name}</td>
+			<td><if condition="$v.state eq 1">已进校
+			<else />未进校</if></td>
+			<td>{$v.addtime}</td>
+			</tr>
+		</foreach>
+	</table>
+	<div class="pagelist">{$sign.page}</div>
+</div>

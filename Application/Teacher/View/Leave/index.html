@@ -1,0 +1,18 @@
+<div class="title">假条审核</div>
+<div class="data-list clear">
+	<table border="1">
+		<tr><th width="100">请假理由</th><th width="80">请假时间</th><th width="80">销假时间</th><th width="50">审核状态</th><th width="50">操作</th></tr>
+		<foreach name="leave.list" item="v">
+		<tr><td>{$v.reason}</td>
+			<td>{$v.timestart}</td>
+			<td>{$v.timeend}</td>
+			<td><if condition="$v['state'] eq 1">批假
+                             <elseif condition="$v['state'] eq 0"/>拒绝批假
+                             <elseif condition="$v['state'] eq -1"/>未审核
+                             </if></td>
+			<td class="center"><a href="__CONTROLLER__/edit/id/{$v.id}">审核</a></td>
+			</tr>
+		</foreach>
+	</table>
+	<div class="pagelist">{$leave.page}</div>
+</div>

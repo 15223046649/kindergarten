@@ -1,0 +1,15 @@
+<div class="title">已发布通知</div>
+<div class="data-list clear">
+	<table border="1">
+		<tr><th width="50">通知主题</th><th width="120">内容</th><th width="80">发布时间</th><th width="50">操作</th></tr>
+		<foreach name="message.list" item="v">
+		<tr><td>{$v.theme}</td>
+			<td>{$v.comment}</td>
+			<td>{$v.time}</td>
+			<td class="center"><a href="{:U('delete?id='.$v['id'])}" onclick="return confirm('确定删除吗？')">删除</a>
+			<a href="{:U('revise?id='.$v['id'])}">| 修改</a></td>
+			</tr>
+		</foreach>
+	</table>
+	<div class="pagelist">{$message.page}</div>
+</div>

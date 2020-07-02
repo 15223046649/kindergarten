@@ -1,0 +1,12 @@
+<div class="title">查看通知</div>
+<div class="data-list clear">
+	<table border="1">
+		<tr><th width="80">通知主题</th><th width="120">内容</th><th width="80">发布时间</th></tr>
+		<foreach name="goods.list" item="v">
+		<tr><td>{$v.gtitle}</td>
+			<td>{$v.gcomment}</td>
+			<td>{$v.gtime}</td>
+		</foreach>
+	</table>
+	<div class="pagelist">{$goods.page}</div>
+</div>

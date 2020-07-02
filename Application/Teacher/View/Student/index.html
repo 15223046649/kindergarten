@@ -1,0 +1,15 @@
+<div class="title">学生信息</div>
+<div class="data-list clear">
+	<table border="1">
+		<tr><th width="50">学号</th><th width="100">姓名</th><th width="80">性别</th><th width="50">联系人</th><th width="80">联系人电话</th></tr>
+		<foreach name="student.list" item="v">
+		<tr><td>{$v.Student_ID}</td>
+			<td>{$v.Student_NAME}</td>
+			<td>{$v.Student_SEX}</td>
+			<td>{$v.Student_PARN}</td>
+			<td>{$v.Student_PART}</td>
+			</tr>
+		</foreach>
+	</table>
+	<div class="pagelist">{$student.page}</div>
+</div>

@@ -1,0 +1,29 @@
+<div class="title">请假-审核</div>
+
+<div class="data-list clear">
+	<table border="0">
+		<tr align="center">
+		<th width="160">开始时间</th>
+		<th width="140">原因</th>
+        <th width="160">结束时间</th>
+        <th width="60">状态</th>
+        <th width="100">操作</th>
+        </tr>
+		<foreach name="tleave.list" item="v">
+		<tr>
+			<td>{$v.timestart}</td>
+			<td class="center">{$v.reason}</td>
+			<td class="center">{$v.timeend}</td>
+			<!--<td class="center">{$v.state}</td>-->
+		 <td class="center">
+							 <if condition="$v.state eq 1">批假
+                             <elseif condition="$v.state eq 0"/>拒绝批假
+                             <elseif condition="$v.state eq -1"/>未审核
+                             </if></td>
+            <td class="center"><a href="{:U('delete?id='.$v['id'])}" onclick="return confirm('确定删除吗？')">删除</a>
+            <a href="{:U('revise?id='.$v['id'])}">| 修改</a></td>
+			</tr>
+		</foreach>
+	</table>
+	<div class="pagelist">{$tleave.page}</div>
+</div>

@@ -1,0 +1,15 @@
+<div class="title">请假-页面</div>
+<div class="title-btn left"><a href="__CONTROLLER__/look">请假记录</a></div><br />
+<div class="data-edit clear">
+ <form method="post" action="__URL__/index">
+	<table width="300">
+  <!--  <tr><td>ID
+    <input type="text" name="id"></td></tr> -->
+       <tr><td>请假时间 <input name="timestart"  type="datetime-local"/> 至
+       &nbsp;&nbsp;&nbsp;<input name="timeend"  type="datetime-local"/></td></tr>
+	   <tr><td><textarea name="reason" style="width:300px;height:200px;" placeholder="请输入原因"></textarea></td></tr>
+		<tr class="tr_btn center"><td colspan="2"><input type="submit" value="确定" />&nbsp;
+		<input type="reset" value="重置" /></td></tr>
+	 </table>
+	 </form>
+</div> 

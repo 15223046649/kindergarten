@@ -1,0 +1,15 @@
+<div class="title">个人信息</div>
+<div class="title-btn left"><a href="__CONTROLLER__/update">修改密码</a></div>
+<div class="title-btn left"><a href="{:U('revise?Teacher_ID='.session("Teacher_ID"))}">签到</a></div>
+<div class="data-list clear">
+	<table border="1">
+		<tr><td width="60">学号</td>
+		<td><?php echo session("Teacher_ID");?></td></tr>
+		<tr><td>密码</td>
+		<td><?php echo md5(session("Teacher_PWD"));?></td></tr>
+		<tr><td>姓名</td>
+		<td><?php echo session("Teacher_NAME");?></td></tr>
+		<tr><td>班级</td>
+		<td><?php echo session("Teacher_CLA");?></td></tr>
+	</table>
+</div>

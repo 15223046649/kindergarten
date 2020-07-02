@@ -1,0 +1,18 @@
+<div class="title">假条审核</div>
+<div class="data-list clear">
+<form method="post" action="">
+	<table>
+	<input type="hidden" name="id" value="{$leave.id}">
+		<tr><td width="100">原因</td>
+		<td>{$leave.reason}</td></tr>
+		<tr><td>请假时间</td>
+		<td>{$leave.timestart}</td></tr>
+		<tr><td>销假时间</td>
+		<td>{$leave.timeend}</td></tr>
+		<tr><td>审核状态</td>
+		<td><input type="radio" name="state" id="" value="1">通过&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="state" id="" value="0"> 未通过</td></tr>
+		<tr><td>&nbsp;</td><td><input style="width:50px;" type="submit" value="确  定" /></td></tr>
+	</table>
+	</form>
+</div>
