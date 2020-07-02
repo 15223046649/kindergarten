@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div class="data-list clear">
+<h3 style="text-align:left">通知列表-教师</h3>
+<form method="post" enctype="multipart/form-data" style="align:center">
+<table  border="1" cellspacing="0px" >
+<tr><th width="200"><p style="text-align:center">通知主题</p></th>
+<th width="200"><p style="text-align:center">通知内容</p></th>
+<th width="200"><p style="text-align:center">发表通知的时间</p></th>
+<th width="200"><p style="text-align:center">操作</p></th></tr>
+<foreach name="goods.list" item="v">
+<td>{$v.gtitle}</td>
+<td>{$v.gcomment}</td>
+<td><p style="text-align:center">{$v.gtime}</p></td>
+
+<td class="center"><a href="__CONTROLLER__/revise/gid/{$v.gid}">修改</a>
+<a href="__CONTROLLER__/del/gid/{$v.gid}">删除</a>
+</td></tr>
+</foreach>
+</table>
+<div class="pagelist">{$goods.page}</div>
+</div>
+<script>
+$("select").change(function(){
+	windows.location.href="__ACTION__/"+$(this).val();
+});
+$(function(){
+	$("tr:odd").addClass("odd");
+});
+}
+</script>
+</body>
+</html>

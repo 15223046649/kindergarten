@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>园长</title>
+	<link href="__PUBLIC__/css/admin.css" rel="stylesheet" />
+	<script src="__PUBLIC__/js/jquery.min.js"></script>
+</head>
+<body>
+<div id="top">
+	<h1 class="left">欢迎园长</h1>
+	<ul class="right">
+		<li><a href="http://{$Think.SERVER.HTTP_HOST}__ROOT__/index.php/Home/Index/Index/index.html">首页</a></li>
+		<li>|</li><li><a href="__MODULE__/User/login">退出登录</a></li>
+	</ul>
+</div>
+<div id="main">
+	<div id="menu" class="left">
+		<ul>
+		    <li><a href="__MODULE__/Index/index" id="Index_index">园长首页</a></li>
+		    <li><a href="__MODULE__/Kindergarten/index" id="Kindergarten_index">园长个人信息</a></li>
+			<li><a href="__MODULE__/Goods/add" id="Goods_add">发表教职工通知</a></li>
+			<li><a href="__MODULE__/Goods/index" id="Goods_index">教职工通知列表</a></li>
+			<li><a href="__MODULE__/Snotice/add" id="Snotice_add">发表家长通知</a></li>
+			<li><a href="__MODULE__/Snotice/index" id="Snotice_index">家长通知列表</a></li>
+			<li><a href="__MODULE__/Teacher/add" id="Teacher_add">教职工信息添加</a></li>
+			<li><a href="__MODULE__/Teacher/index" id="Teacher_index">教职工列表</a></li>
+			<li><a href="__MODULE__/Student/add" id="Student_add">学生信息添加</a></li>
+			<li><a href="__MODULE__/Student/index" id="Student_index">学生列表</a></li>
+			<li><a href="__MODULE__/Tview/index" id="Tview_index">教职工意见表</a></li>
+			<li><a href="__MODULE__/Sview/index" id="Sview_index">家长意见表</a></li>
+			<li><a href="__MODULE__/Tleave/index" id="Tleave_index">教师请假表</a></li>
+		</ul>
+	</div>
+	<div id="content">
+	<div class="item">{__CONTENT__}</div>
+	</div>
+</div>
+<script>
+	$("#{$Think.CONTROLLER_NAME}_{$Think.ACTION_NAME}").addClass("curr");
+</script>
+</body>
+</html> 

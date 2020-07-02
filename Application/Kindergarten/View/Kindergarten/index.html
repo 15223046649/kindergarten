@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div class="data-list clear">
+<h3 style="text-align:left">园长个人信息表</h3>
+<form method="post" enctype="multipart/form-data" style="align:center">
+<table  border="1" cellspacing="0px" >
+<tr><th width="200"><p style="text-align:center">姓名</p></th>
+<th width="200"><p style="text-align:center">密码</p></th>
+<th width="200"><p style="text-align:center">性别</p></th>
+<th width="200"><p style="text-align:center">联系方式</p></th>
+<th width="200"><p style="text-align:center">操作</p></th>
+</tr>
+<foreach name="kindergarten.list" item="v">
+<td><p style="text-align:center">{$v.name}</p></td>
+<td><p style="text-align:center">{$v.password}</p></td>
+<td><p style="text-align:center">{$v.sex}</p></td>
+<td><p style="text-align:center">{$v.phonenum}</p></td>
+<td class="center"><a href="__CONTROLLER__/revise/id/{$v.id}">修改</a>
+</td>
+</tr>
+</foreach>
+</table>
+<div class="pagelist">{$goods.page}</div>
+</div>
+<script>
+$("select").change(function(){
+	windows.location.href="__ACTION__/"+$(this).val();
+});
+$(function(){
+	$("tr:odd").addClass("odd");
+});
+}
+</script>
+</body>
+</html>
